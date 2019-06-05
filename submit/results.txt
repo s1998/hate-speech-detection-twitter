@@ -1,0 +1,146 @@
+Tensor("graphconvolution_2/SparseTensorDenseMatMul/SparseTensorDenseMatMul:0", shape=(?, 3), dtype=float32)
+2019-03-03 19:17:46.679944: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
+Epoch: 0001 train_loss= 1.09817 train_acc= 0.34021 val_loss= 0.63995 val_acc= 0.77208 time= 3.14000
+Epoch: 0002 train_loss= 0.60999 train_acc= 0.78321 val_loss= 0.57700 val_acc= 0.79297 time= 2.69209
+Epoch: 0003 train_loss= 0.52860 train_acc= 0.80753 val_loss= 0.50351 val_acc= 0.82764 time= 2.74539
+Epoch: 0004 train_loss= 0.44050 train_acc= 0.85357 val_loss= 0.49345 val_acc= 0.84141 time= 2.75037
+Epoch: 0005 train_loss= 0.41908 train_acc= 0.87082 val_loss= 0.46779 val_acc= 0.83998 time= 2.85533
+Epoch: 0006 train_loss= 0.37016 train_acc= 0.87868 val_loss= 0.44632 val_acc= 0.84710 time= 3.12614
+Epoch: 0007 train_loss= 0.32801 train_acc= 0.88755 val_loss= 0.45012 val_acc= 0.84473 time= 2.69541
+Epoch: 0008 train_loss= 0.31581 train_acc= 0.88944 val_loss= 0.46268 val_acc= 0.84188 time= 2.94956
+Epoch: 0009 train_loss= 0.29778 train_acc= 0.89593 val_loss= 0.47027 val_acc= 0.84141 time= 2.87538
+Epoch: 0010 train_loss= 0.28477 train_acc= 0.90026 val_loss= 0.47155 val_acc= 0.84425 time= 2.84700
+Epoch: 0011 train_loss= 0.26020 train_acc= 0.90844 val_loss= 0.47250 val_acc= 0.84948 time= 2.73609
+Epoch: 0012 train_loss= 0.24906 train_acc= 0.91155 val_loss= 0.47840 val_acc= 0.85185 time= 3.02776
+Epoch: 0013 train_loss= 0.23147 train_acc= 0.91688 val_loss= 0.48995 val_acc= 0.84900 time= 2.76450
+Early stopping...
+Optimization Finished!
+
+
+
+
+Train set results: cost= 0.20763 accuracy= 0.92643 time= 0.53462
+37835
+Train Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+           0     0.9382    0.9722    0.9549     14684
+           1     0.7933    0.3660    0.5009      1101
+           2     0.8921    0.9089    0.9004      3174
+
+   micro avg     0.9264    0.9264    0.9264     18959
+   macro avg     0.8745    0.7491    0.7854     18959
+weighted avg     0.9220    0.9264    0.9194     18959
+
+Macro average Train Precision, Recall and F1-Score...
+(0.8745174866626675, 0.7490644121625051, 0.7854178872974735, None)
+Micro average Train Precision, Recall and F1-Score...
+(0.9264201698401815, 0.9264201698401815, 0.9264201698401814, None)
+Weight average Train Precision, Recall and F1-Score...
+(0.9220352392355546, 0.9264201698401815, 0.9194069623314938, None)
+Test set results: cost= 0.49281 accuracy= 0.83513 time= 0.55102
+37835
+[[0.         0.         0.         ... 0.         0.         0.        ]
+ [0.         0.00864517 0.00659907 ... 0.00686811 0.00677672 0.01247684]
+ [0.         0.         0.00376344 ... 0.00486291 0.00221151 0.        ]
+ ...
+ [0.00426469 0.         0.00919908 ... 0.01279878 0.0090987  0.        ]
+ [0.         0.         0.01274255 ... 0.01667911 0.01720743 0.        ]
+ [0.         0.         0.00753167 ... 0.00727144 0.00456424 0.        ]]
+[[2634   49  196]
+ [ 159   27   28]
+ [ 171   10  444]]
+Test Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+           0     0.8887    0.9149    0.9016      2879
+           1     0.3140    0.1262    0.1800       214
+           2     0.6647    0.7104    0.6868       625
+
+   micro avg     0.8351    0.8351    0.8351      3718
+   macro avg     0.6224    0.5838    0.5895      3718
+weighted avg     0.8179    0.8351    0.8239      3718
+
+
+
+
+
+200, 100
+Test Precision, Recall and F1-Score...
+              precision    recall  f1-score   support
+
+           0     0.8971    0.9271    0.9119      2879
+           1     0.3458    0.1729    0.2305       214
+           2     0.7107    0.7232    0.7169       625
+
+   micro avg     0.8494    0.8494    0.8494      3718
+   macro avg     0.6512    0.6077    0.6198      3718
+weighted avg     0.8341    0.8494    0.8399      3718
+
+
+
+
+
+
+
+
+
+
+
+
+
+Result on test data:
+Test Precision, Recall and F1-Score : 
+              precision    recall  f1-score   support
+
+           0     0.6774    0.1963    0.3043       214
+           1     0.9339    0.9611    0.9473      2879
+           2     0.8196    0.9088    0.8619       625
+
+   micro avg     0.9083    0.9083    0.9083      3718
+   macro avg     0.8103    0.6887    0.7045      3718
+weighted avg     0.8999    0.9083    0.8959      3718
+
+Macro average Test Precision, Recall and F1-Score : 0.81 0.69 0.70
+Micro average Test Precision, Recall and F1-Score : 0.91 0.91 0.91
+Weight average Test Precision, Recall and F1-Score : 0.90 0.91 0.90
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mix : 0.8990558311622096
